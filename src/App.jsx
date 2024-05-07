@@ -1,12 +1,13 @@
+import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
     <>
     <Navbar/>
-    {/* <!-- Hero --> */}
+    <Hero
     
-
+    />
     {/* <!-- Developers and Employers --> */}
     <section className="py-4">
       <div className="container-xl lg:container m-auto">
