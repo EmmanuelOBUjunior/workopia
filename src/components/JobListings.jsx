@@ -9,11 +9,11 @@ const JobListings = () => {
         Browse Jobs
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {}
-        <div className="bg-white rounded-xl shadow-md relative">
+        {jobs.map((job)=>(
+        <div key ={job.id} className="bg-white rounded-xl shadow-md relative">
           <div className="p-4">
             <div className="mb-6">
-              <div className="text-gray-600 my-2">Full-Time</div>
+              <div className="text-gray-600 my-2">{job.type}</div>
               <h3 className="text-xl font-bold">Senior React Developer</h3>
             </div>
 
@@ -39,6 +39,7 @@ const JobListings = () => {
             </div>
           </div>
         </div>
+        ))}
         
       </div>
     </div>
