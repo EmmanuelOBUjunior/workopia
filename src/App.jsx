@@ -8,11 +8,9 @@ const App = () => {
     <>
     <Navbar/>
     <Hero
-    title="Become a Software Engineer"
-    subheadline="Find the perfect job that fits your skill set and interests"
+    
     />
     <HomeCards/>
-
     <JobListings/>
 
     <section className="m-auto max-w-lg my-10 px-6">
