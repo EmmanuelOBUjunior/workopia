@@ -21,14 +21,14 @@ const JobListings = () => {
              {job.description}
             </div>
 
-            <h3 className="text-indigo-500 mb-2">$70 - $80K / Year</h3>
+            <h3 className="text-indigo-500 mb-2">{job.salary} / Year</h3>
 
             <div className="border border-gray-100 mb-5"></div>
 
             <div className="flex flex-col lg:flex-row justify-between mb-4">
               <div className="text-orange-700 mb-3">
                 <i className="fa-solid fa-location-dot text-lg"></i>
-                Boston, MA
+                {job.location}
               </div>
               <a
                 href="job.html"
