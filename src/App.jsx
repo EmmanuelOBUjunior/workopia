@@ -10,7 +10,7 @@ const App = () => {
     title="Become a Software Engineer"
     subheadline="Find the perfect job that fits your skill set and interests"
     />
-    {/* <HomeCards/> */}
+    <HomeCards/>
 
     {/* <!-- Browse Jobs --> */}
     <section className="bg-blue-50 px-4 py-10">
