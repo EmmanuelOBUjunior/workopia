@@ -7,7 +7,7 @@ const App = () => {
     <Navbar/>
     <Hero
     title="Become a Software Engineer"
-    subtitle="Find the perfect job that fits your skill set and interests"
+    subheadline="Find the perfect job that fits your skill set and interests"
     />
     {/* <!-- Developers and Employers --> */}
     <section className="py-4">
