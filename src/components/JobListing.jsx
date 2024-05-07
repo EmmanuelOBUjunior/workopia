@@ -22,7 +22,7 @@ const JobListing = ({job}) => {
             <div>
              {description}
             </div>
-            <button className="mb-5 text-indigo-700 underline">{showFullDescription ? 'Less':'More'}</button>
+            <button onClick={()=> setShowFullDescription((prevState)=> !prevState)} className="mb-5 text-indigo-700">{showFullDescription ? 'Less':'More'}</button>
 
             <h3 className="text-indigo-500 mb-2">{job.salary} / Year</h3>
 
