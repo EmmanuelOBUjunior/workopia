@@ -1,5 +1,5 @@
 
-const JobListing = () => {
+const JobListing = ({job}) => {
   return (
     <div>JobListing</div>
   )
