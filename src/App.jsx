@@ -1,9 +1,9 @@
+import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
     <>
-     
-
+    <Navbar/>
     {/* <!-- Hero --> */}
     <section className="bg-indigo-700 py-20 mb-4">
       <div
