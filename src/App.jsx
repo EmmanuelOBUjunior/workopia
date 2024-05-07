@@ -6,7 +6,7 @@ const App = () => {
     <>
     <Navbar/>
     <Hero
-    
+    title="Become a Software Engineer"
     />
     {/* <!-- Developers and Employers --> */}
     <section className="py-4">
