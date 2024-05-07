@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
-const Card = ({children}) => {
+const Card = ({children, bg}) => {
   return (
-    <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+    <div className={`${bg} p-6 rounded-lg shadow-md`}>
         {children}
     </div>
   )
