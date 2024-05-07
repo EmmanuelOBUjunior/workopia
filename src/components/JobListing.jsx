@@ -22,6 +22,7 @@ const JobListing = ({job}) => {
             <div>
              {description}
             </div>
+            <button className="mb-5">{}</button>
 
             <h3 className="text-indigo-500 mb-2">{job.salary} / Year</h3>
 
