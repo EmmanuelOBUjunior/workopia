@@ -1,4 +1,4 @@
-import {jobs} from '../../src/jobs.json'
+import jobs from '../../src/jobs.json'
 
 const JobListings = () => {
     console.log(jobs)
