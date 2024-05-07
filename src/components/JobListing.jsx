@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 const JobListing = ({job}) => {
-    const [showFullDescription, setShowFullDescription] = useState(true)
+    const [showFullDescription, setShowFullDescription] = useState(false)
 
     let description = job.description;
 
