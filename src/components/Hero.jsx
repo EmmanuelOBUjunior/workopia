@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line react/prop-types
 const Hero = ({title, subheadline}) => {
   return (
     <section className="bg-indigo-700 py-20 mb-4">
