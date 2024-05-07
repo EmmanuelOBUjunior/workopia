@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-
 import { useState } from "react"
+import {FaMapMarker} from 'react-icons/fa'
 
 const JobListing = ({job}) => {
     const [showFullDescription, setShowFullDescription] = useState(false)
