@@ -22,7 +22,7 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
-                  to="/jobs.html"
+                  to="/jobs"
                   className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
                 >
                   Jobs
