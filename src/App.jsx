@@ -8,7 +8,7 @@ import {
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route />
+      <Route index element={<Homepage/>}/>
     )
   )
 
