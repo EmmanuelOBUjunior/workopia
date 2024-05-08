@@ -6,7 +6,13 @@ import {
 } from "react-router-dom";
 
 const App = () => {
-  return <></>;
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route />
+    )
+  )
+
+  return <RouterProvider router={router}/>
 };
 
 export default App;
