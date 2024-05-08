@@ -39,7 +39,7 @@ const JobListing = ({job}) => {
               >
                Read More
               </a>
-            </div>
+            </div> 
           </div>
         </div>
   )
