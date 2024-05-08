@@ -8,7 +8,8 @@ const Homepage = () => {
     <>
     <Hero/>
     <HomeCards/>
-    <ViewAllJobs></ViewAllJobs>
+    <Job
+    <ViewAllJobs/>
     </>
   )
 }
