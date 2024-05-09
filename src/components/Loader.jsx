@@ -6,7 +6,7 @@ const customStyle = {
     justifyContent: 'center'
 }
 
-const Loader = () => {
+const Loader = ({loading}) => {
   return (
     <BeatLoader
     color="#4338ca"
