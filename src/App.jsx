@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import MainLayout from "./layouts/MainLayout";
+import JobsPage from "./pages/JobsPage";
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout/>}>
         <Route index element={<Homepage/>}/>
+        <Route path="/job" element={<JobsPage/>}/>
       </Route>
     )
   )
