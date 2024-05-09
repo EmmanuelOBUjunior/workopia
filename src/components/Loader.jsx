@@ -1,20 +1,20 @@
 /* eslint-disable react/prop-types */
 
-import  BeatLoader  from "react-spinners/BeatLoader"
+import  ClipLoader  from "react-spinners/ClipLoader"
 
-const override= {
-    color: "red",
-    display: "block",
-    margin: "100px auto",
-    borderColor: "red"
-}
+// const override= {
+//     color: "red",
+//     display: "block",
+//     margin: "100px auto",
+//     borderColor: "red"
+// }
 
 const Loader = ({loading}) => {
   return (
-    <BeatLoader
+    <ClipLoader
     color="#4338ca"
     size={15}
-    cssOverride={override}
+    // cssOverride={override}
     loading = {loading}
     aria-label = "Loading Spinner"
     />
