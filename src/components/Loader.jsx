@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
+
 import  BeatLoader  from "react-spinners/BeatLoader"
 
-const customStyle = {
+const override= {
     display: "block",
     margin: "auto"
 }
@@ -11,7 +12,7 @@ const Loader = ({loading}) => {
     <BeatLoader
     color="#4338ca"
     size={15}
-    cssOverride={customStyle}
+    cssOverride={override}
     loading = {loading}
     aria-label = "Loading Spinner"
     />
