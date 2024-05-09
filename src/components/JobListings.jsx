@@ -15,7 +15,7 @@ const JobListings = ({isHome=false}) => {
       console.log(jobs)
     }
     fetchJobs()
-  })
+  },[])
 
   const jobList = isHome ? jobs.slice(0,3): jobs;
 
