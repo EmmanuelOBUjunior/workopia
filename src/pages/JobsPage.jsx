@@ -1,6 +1,10 @@
+import JobListings from '../components/JobListings'
+
 const JobsPage = () => {
   return (
-    <div>JobsPage</div>
+    <div>
+      <JobListings/>
+    </div>
   )
 }
 
