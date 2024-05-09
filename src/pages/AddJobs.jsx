@@ -1,7 +1,7 @@
 
 const AddJobs = () => {
   return (
-    <div>AddJobs</div>
+    <div>Add Jobs Page</div>
   )
 }
 
