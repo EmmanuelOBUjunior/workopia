@@ -8,7 +8,7 @@ const JobListings = ({isHome=false}) => {
 
   useEffect(()=>{
     const fetchJobs = async()=>{
-      const res = await fetch('localhost:5000/jobs')
+      const res = await fetch('http://localhost:5000/jobs')
       const data = await res.json()
       setJobs(data)
       console.log(jobs)
