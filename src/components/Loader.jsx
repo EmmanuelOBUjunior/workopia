@@ -11,8 +11,8 @@ const Loader = () => {
     color="#4338ca"
     wrapperClass= {customStyle}
     visible = {true}
-    height = "150"
-    width = "150"
+    height = "80"
+    width = "80"
     ariaLabel="three-dots-loading"
     />
   )
