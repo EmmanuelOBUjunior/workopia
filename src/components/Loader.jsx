@@ -3,7 +3,7 @@ import  BeatLoader  from "react-spinners/BeatLoader"
 
 const customStyle = {
     display: "block",
-    margin: "100 auto"
+    margin: "auto"
 }
 
 const Loader = ({loading}) => {
