@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import JobListing from '../components/JobListing'
+import Loader from './componentsLoader';
 
 
 const JobListings = ({isHome=false}) => {
@@ -34,7 +35,7 @@ const JobListings = ({isHome=false}) => {
         {isHome ? 'Recent Jobs': 'Browse Jobs'}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {loading ? (<p>Loading.....</p>):(
+        {loading ? (<Loader/>):(
           <>
           {jobList.map((job)=>(
             <JobListing key={job.id} job={job}/>
