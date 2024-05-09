@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import jobs from '../../src/jobs.json'
 import JobListing from './JobListing'
 
