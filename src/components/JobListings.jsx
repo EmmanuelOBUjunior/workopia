@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
-
+import JobListing from '../components/JobListing'
 
 
 const JobListings = ({isHome=false}) => {
@@ -10,12 +10,12 @@ const JobListings = ({isHome=false}) => {
   useEffect(()=>{
     const fetchJobs = async()=>{
       try {
-        const {res} = await fetch('http://localhost:5000/jobs')
+        const res = await fetch('http://localhost:5000/jobs')
       const data = await res.json()
       setJobs(data)
       console.log(jobs)
       } catch (error) {
-        console.log("Error fetching data!!";)
+        console.log("Error fetching data!!", error);
       }
       
     }
