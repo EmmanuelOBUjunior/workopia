@@ -2,16 +2,15 @@
 import { BeatLoader } from "react-spinners/BeatLoader"
 
 const customStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
+    display: "block",
+    margin: "100 auto"
 }
 
 const Loader = ({loading}) => {
   return (
     <BeatLoader
     color="#4338ca"
-    size="15"
+    size={15}
     cssOverride={customStyle}
     loading = {loading}
     />
