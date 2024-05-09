@@ -5,10 +5,11 @@ import { useEffect, useState } from 'react';
 
 const JobListings = ({isHome=false}) => {
   const [jobs, setJobs] = useState([])
+  const [loading, setLoading] = useState([])
 
   useEffect(()=>{
     const fetchJobs = async()=>{
-      const res = await fetch('http://localhost:5000/jobs')
+      const {res} = await fetch('http://localhost:5000/jobs')
       const data = await res.json()
       setJobs(data)
       console.log(jobs)
