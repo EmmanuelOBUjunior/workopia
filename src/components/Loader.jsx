@@ -3,7 +3,7 @@ import { ThreeDots } from "react-loader-spinner"
 const customStyle = {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
 }
 
 const Loader = () => {
