@@ -1,8 +1,22 @@
 /* eslint-disable react/prop-types */
-import jobs from '../../src/jobs.json'
-import JobListing from './JobListing'
+import { useEffect, useState } from 'react';
+
+
 
 const JobListings = ({isHome=false}) => {
+  const [jobs, setJobs] = useState([])
+
+  useEffect(()=>{
+    const fetchJobs = async()=>{
+      const res = await fetch('http://localhost:5000/jobs')
+      const data = await res.json()
+      setJobs(data)
+      console.log(jobs)
+    }
+
+    fetchJobs()
+  })
+
   const jobList = isHome ? jobs.slice(0,3): jobs;
 
   return (
