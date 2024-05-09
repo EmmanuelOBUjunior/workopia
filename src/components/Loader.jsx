@@ -4,7 +4,7 @@ import  BeatLoader  from "react-spinners/BeatLoader"
 
 const override= {
     display: "block",
-    margin: "0 auto"
+    margin: "100 auto"
 }
 
 const Loader = ({loading}) => {
