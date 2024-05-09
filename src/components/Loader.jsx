@@ -3,6 +3,7 @@
 import  BeatLoader  from "react-spinners/BeatLoader"
 
 const override= {
+    color: "red",
     display: "block",
     margin: "100px auto",
     borderColor: "red"
