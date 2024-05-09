@@ -13,6 +13,7 @@ const Loader = ({loading}) => {
     size={15}
     cssOverride={customStyle}
     loading = {loading}
+    aria-label = "Loading Spinner"
     />
   )
 }
