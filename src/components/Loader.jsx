@@ -1,8 +1,9 @@
 import { ThreeDots } from "react-loader-spinner"
 
 const customStyle = {
-    display: 'block',
-    margin: '100px auto'
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
 }
 
 const Loader = () => {
