@@ -9,10 +9,15 @@ const JobListings = ({isHome=false}) => {
 
   useEffect(()=>{
     const fetchJobs = async()=>{
-      const {res} = await fetch('http://localhost:5000/jobs')
+      try {
+        const {res} = await fetch('http://localhost:5000/jobs')
       const data = await res.json()
       setJobs(data)
       console.log(jobs)
+      } catch (error) {
+        console.log("Error fetching data!!";)
+      }
+      
     }
     fetchJobs()
   },[])
