@@ -1,4 +1,4 @@
-import { BsDisplay } from "react-icons/bs"
+
 import { ThreeDots } from "react-loader-spinner"
 
 const customStyle = {
@@ -14,7 +14,7 @@ const Loader = () => {
     visible = {true}
     height = "150"
     width = "150"
-    
+    ariaLabel="three-dots-loading"
     />
   )
 }
