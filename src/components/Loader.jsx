@@ -14,6 +14,7 @@ const Loader = () => {
     visible = {true}
     height = "80"
     width = "80"
+    radius="9"
     ariaLabel="three-dots-loading"
     />
   )
