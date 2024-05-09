@@ -13,7 +13,6 @@ const JobListings = ({isHome=false}) => {
         const res = await fetch('http://localhost:5000/jobs')
       const data = await res.json()
       setJobs(data)
-      console.log(jobs)
       } catch (error) {
         console.log("Error fetching data!!", error);
       }
@@ -21,6 +20,8 @@ const JobListings = ({isHome=false}) => {
     }
     fetchJobs()
   },[])
+
+  console.log(jobs)
 
   const jobList = isHome ? jobs.slice(0,3): jobs;
 
