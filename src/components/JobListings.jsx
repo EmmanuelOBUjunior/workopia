@@ -17,7 +17,7 @@ const JobListings = ({isHome=false}) => {
       } catch (error) {
         console.log("Error fetching data!!", error);
       }finally{
-        setLoading(false)
+        setLoading(true)
       }
       
     }
