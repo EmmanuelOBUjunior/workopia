@@ -3,7 +3,7 @@
 import  ClipLoader  from "react-spinners/ClipLoader"
 
 const override= {
-    color: "red",
+    color="#4338ca"
     display: "block",
     margin: "100px auto",
     borderColor: "red"
@@ -12,7 +12,6 @@ const override= {
 const Loader = ({loading}) => {
   return (
     <ClipLoader
-    color="#4338ca"
     size={100}
     cssOverride={override}
     loading = {loading}
