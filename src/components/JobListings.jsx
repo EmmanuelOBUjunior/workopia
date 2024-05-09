@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import JobListing from '../components/JobListing'
-import Loader from './componentsLoader';
+import Loader from './components/Loader';
 
 
 const JobListings = ({isHome=false}) => {
