@@ -6,7 +6,7 @@ const customStyle = {
     margin: "100 auto"
 }
 
-const Loader = ({loading}) => {
+export const Loader = ({loading}) => {
   return (
     <BeatLoader
     color="#4338ca"
@@ -18,4 +18,3 @@ const Loader = ({loading}) => {
   )
 }
 
-export default Loader
