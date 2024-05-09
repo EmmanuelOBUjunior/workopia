@@ -14,7 +14,7 @@ const Loader = ({loading}) => {
     <ClipLoader
     color="#4338ca"
     size={100}
-    // cssOverride={override}
+    cssOverride={override}
     loading = {loading}
     aria-label = "Loading Spinner"
     />
