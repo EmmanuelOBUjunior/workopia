@@ -1,4 +1,4 @@
-import { ThreeDots } from "react-loader-spinner"
+import { BeatLoader } from "react-spinners/BeatLoader"
 
 const customStyle = {
     display: 'flex',
@@ -8,14 +8,11 @@ const customStyle = {
 
 const Loader = () => {
   return (
-    <ThreeDots
+    <BeatLoader
     color="#4338ca"
-    wrapperClass= {customStyle}
-    visible = {true}
-    height = "80"
-    width = "80"
-    radius="9"
-    ariaLabel="three-dots-loading"
+    size="15"
+    cssOverride={customStyle}
+    loading = {loading}
     />
   )
 }
