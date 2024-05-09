@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { BeatLoader } from "react-spinners/BeatLoader"
+import  BeatLoader  from "react-spinners/BeatLoader"
 
 const customStyle = {
     display: "block",
