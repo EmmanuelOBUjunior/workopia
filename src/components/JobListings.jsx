@@ -5,7 +5,7 @@ import JobListing from '../components/JobListing'
 
 const JobListings = ({isHome=false}) => {
   const [jobs, setJobs] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   useEffect(()=>{
     const fetchJobs = async()=>{
@@ -16,7 +16,7 @@ const JobListings = ({isHome=false}) => {
       } catch (error) {
         console.log("Error fetching data!!", error);
       }finally{
-        setLoading(false)
+        setLoading(true)
       }
       
     }
