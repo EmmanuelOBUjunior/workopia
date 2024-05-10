@@ -4,7 +4,9 @@ import { useParams } from "react-router-dom";
 
 
 const JobPage = () => {
-    const id = useParams()
+    const params = useParams()
+    const id  = +params.id
+    console.log(id)
     const [jobData, setjobData] = useState([]);
     useEffect(()=>{
         const fetchData = async() =>{
