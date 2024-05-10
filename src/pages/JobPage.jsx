@@ -47,7 +47,7 @@ const JobPage = () => {
                   Salary
                 </h3>
 
-                <p className="mb-4">$70k - $80K / Year</p>
+                <p className="mb-4">{job.salary} / Year</p>
               </div>
             </main>
 
