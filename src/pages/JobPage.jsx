@@ -18,10 +18,10 @@ const JobPage = () => {
         fetchData()
     }, [id])
 
-    console.log(jobData)
+    console.log({jobData})
 
   return (
-    <div>JobPage</div>
+    <div>{jobData}</div>
   )
 }
 
