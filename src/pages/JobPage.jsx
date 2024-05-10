@@ -10,7 +10,7 @@ const JobPage = () => {
     const [jobData, setjobData] = useState([]);
     useEffect(()=>{
         const fetchData = async() =>{
-            const res = await fetch(`/api/jobs/${id}`)
+            const {res} = await fetch(`/api/jobs/${id}`)
             const data = res.json()
             setjobData(data)
         }
@@ -18,10 +18,10 @@ const JobPage = () => {
         fetchData()
     }, [id])
 
-    console.log({jobData})
+    console.log(jobData)
 
   return (
-    <div>{jobData}</div>
+    <div>Job</div>
   )
 }
 
