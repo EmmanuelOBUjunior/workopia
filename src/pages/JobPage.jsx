@@ -11,7 +11,7 @@ const JobPage = () => {
     useEffect(()=>{
         const fetchData = async() =>{
             const res = await fetch(`/api/jobs/${id}`)
-            const data = res.json()
+            const data = await res.json()
             setjobData(data)
         }
 
