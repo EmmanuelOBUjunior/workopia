@@ -6,7 +6,12 @@ const JobPage = () => {
     const id = useSearchParams('id')
     const [jobData, setjobData] = useState([]);
     useEffect(()=>{
+        const fetchData = async() =>{
+            const res = await fetch(`/api/jobs/${id}`)
+            const data = res.json()
+        }
 
+        fetchData()
     }, [])
 
 
