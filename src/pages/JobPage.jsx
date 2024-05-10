@@ -1,10 +1,11 @@
 /* eslint-disable react-refresh/only-export-components */
-import { useParams } from "react-router-dom"
+import { useParams, useLoaderData } from "react-router-dom"
 
 const JobPage = () => {
     const params = useParams()
+    const job = useLoaderData()
   return (
-    <div>Job Page</div>
+    <div>{job.title}</div>
   )
 }
 
