@@ -21,7 +21,7 @@ const JobPage = () => {
     console.log(jobData)
 
   return (
-    <div>Job</div>
+    <div>{jobData.company.name}</div>
   )
 }
 
