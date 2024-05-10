@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useParams } from "react-router-dom"
 
 const JobPage = () => {
