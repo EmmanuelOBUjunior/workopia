@@ -14,7 +14,7 @@ const JobPage = () => {
         }
 
         fetchData()
-    }, [])
+    }, [id])
 
     console.log(jobData)
 
