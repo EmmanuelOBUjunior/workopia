@@ -55,7 +55,7 @@ const JobPage = () => {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-6">Company Info</h3>
 
-                <h2 className="text-2xl">NewTek Solutions</h2>
+                <h2 className="text-2xl">{job.company.name}</h2>
 
                 <p className="my-2">
                   NewTek Solutions is Link leading technology company specializing
