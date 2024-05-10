@@ -2,7 +2,7 @@
 import { useParams, useLoaderData } from "react-router-dom"
 
 const JobPage = () => {
-    const params = useParams()
+    const {id} = useParams()
     const job = useLoaderData()
   return (
     <div>{job.title}</div>
