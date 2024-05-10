@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { useEffect } from "react"
-import { useSearchParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+
 
 const JobPage = () => {
-    const id = useSearchParams('id')
+    const id = useParams()
     const [jobData, setjobData] = useState([]);
     useEffect(()=>{
         const fetchData = async() =>{
