@@ -58,11 +58,7 @@ const JobPage = () => {
                 <h2 className="text-2xl">{job.company.name}</h2>
 
                 <p className="my-2">
-                  NewTek Solutions is Link leading technology company specializing
-                  in web development and digital solutions. We pride ourselves
-                  on delivering high-quality products and services to our
-                  clients while fostering Link collaborative and innovative work
-                  environment.
+                  {job.company.description}
                 </p>
 
                 <hr className="my-4" />
