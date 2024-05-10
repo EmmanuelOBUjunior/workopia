@@ -9,11 +9,13 @@ const JobPage = () => {
         const fetchData = async() =>{
             const res = await fetch(`/api/jobs/${id}`)
             const data = res.json()
+            setjobData(data)
         }
 
         fetchData()
     }, [])
 
+    console.log(jobData)
 
   return (
     <div>JobPage</div>
