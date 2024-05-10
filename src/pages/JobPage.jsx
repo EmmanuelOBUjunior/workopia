@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 import { useParams, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const JobPage = () => {
   const { id } = useParams();
@@ -8,12 +10,12 @@ const JobPage = () => {
     <>
       <section>
         <div className="container m-auto py-6 px-6">
-          <a
+          <Link
             href="/jobs.html"
             className="text-indigo-500 hover:text-indigo-600 flex items-center"
           >
             <i className="fas fa-arrow-left mr-2"></i> Back to Job Listings
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -38,7 +40,7 @@ const JobPage = () => {
                 </h3>
 
                 <p className="mb-4">
-                  We are seeking a talented Front-End Developer to join our team
+                  We are seeking Link talented Front-End Developer to join our team
                   in Boston, MA. The ideal candidate will have strong skills in
                   HTML, CSS, and JavaScript, with experience working with modern
                   JavaScript frameworks such as React or Angular.
@@ -59,10 +61,10 @@ const JobPage = () => {
                 <h2 className="text-2xl">NewTek Solutions</h2>
 
                 <p className="my-2">
-                  NewTek Solutions is a leading technology company specializing
+                  NewTek Solutions is Link leading technology company specializing
                   in web development and digital solutions. We pride ourselves
                   on delivering high-quality products and services to our
-                  clients while fostering a collaborative and innovative work
+                  clients while fostering Link collaborative and innovative work
                   environment.
                 </p>
 
@@ -81,12 +83,12 @@ const JobPage = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
                 <h3 className="text-xl font-bold mb-6">Manage Job</h3>
-                <a
+                <Link
                   href="/add-job.html"
                   className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
                   Edit Job
-                </a>
+                </Link>
                 <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
                   Delete Job
                 </button>
