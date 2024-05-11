@@ -54,6 +54,8 @@ const AddJobs = () => {
                   className="border rounded w-full py-2 px-3 mb-2"
                   placeholder="eg. Beautiful Apartment In Miami"
                   required
+                  value={type}
+                  onChange={(e)=>setType(e.target.value)}
                 />
               </div>
               <div className="mb-4">
