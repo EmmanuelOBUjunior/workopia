@@ -28,7 +28,9 @@ const App = () => {
   }
 
   //DELETE LISTED JOB
-  
+  const deleteJob = async(jobId) =>{
+
+  }
 
 
   const router = createBrowserRouter(
