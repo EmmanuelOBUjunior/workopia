@@ -173,6 +173,8 @@ const AddJobs = () => {
                   className="border rounded w-full py-2 px-3"
                   placeholder="Email address for applicants"
                   required
+                  value={contactEmail}
+                  onChange={(e)=>setContactEmail(e.target.value)}
                 />
               </div>
               <div className="mb-4">
