@@ -2,6 +2,14 @@ import { useState } from "react";
 
 const AddJobs = () => {
   const [title, setTitle] = useState();
+  const [type, setType] = useState();
+  const [location, setLocation] = useState();
+  const [description, setDescription] = useState();
+  const [salary, setSalary] = useState();
+  const [companyName, setCompanyName] = useState();
+  const [companyDescription, setCompanyDescription] = useState();
+  const [contactEmail, setContact] = useState();
+  const [title, setTitle] = useState();
 
   return (
     <>
