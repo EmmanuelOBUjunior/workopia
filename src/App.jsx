@@ -23,6 +23,7 @@ const App = () => {
       },
       body: JSON.stringify(newJob)
     })
+    if(res.ok) return
   }
 
 
