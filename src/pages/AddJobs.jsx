@@ -182,7 +182,7 @@ const AddJobs = () => {
                   htmlFor="contact_phone"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Contact PhonSe
+                  Contact Phone
                 </label>
                 <input
                   type="tel"
