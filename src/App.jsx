@@ -16,7 +16,13 @@ import JobPage,{jobLoader} from "./pages/JobPage";
 const App = () => {
 
   const submitNewJob = async(newJob) =>{
-    const res = await fetch('/api/jobs')
+    const res = await fetch('/api/jobs',{
+      method: 'POST',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newJob)
+    })
   }
 
 
