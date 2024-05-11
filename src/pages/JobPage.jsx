@@ -4,7 +4,7 @@ import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import {FaArrowLeft} from 'react-icons/fa'
 
-const JobPage = () => {
+const JobPage = ({deleteJob}) => {
   const { id } = useParams();
   const job = useLoaderData();
   return (
