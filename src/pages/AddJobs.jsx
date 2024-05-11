@@ -28,6 +28,8 @@ const AddJobs = () => {
       }
 
     }
+
+  console.log(newJob)
   }
 
   return (
