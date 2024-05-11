@@ -11,6 +11,10 @@ const AddJobs = () => {
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
 
+  const handleSubmit = (e)=>{
+    
+  }
+
   return (
     <>
       <section className="bg-indigo-50">
