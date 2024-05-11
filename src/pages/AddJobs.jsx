@@ -72,7 +72,7 @@ const AddJobs = () => {
                   rows="4"
                   placeholder="Add any job duties, expectations, requirements, etc"
                   value={description}
-                  onChange={(e)=>setType(e.target.value)}
+                  onChange={(e)=>setDescription(e.target.value)}
                 ></textarea>
               </div>
 
