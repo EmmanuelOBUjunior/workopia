@@ -13,7 +13,10 @@ const AddJobs = () => {
 
   const handleSubmit = (e)=>{
     e.preventDefault()
-    console.log(title, contactPhone)
+    
+    const newJob = {
+      
+    }
   }
 
   return (
