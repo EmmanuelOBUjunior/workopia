@@ -18,7 +18,14 @@ const AddJobs = () => {
       title,
       type,
       location,
-      
+      description,
+      salary,
+      company:{
+        name: companyName,
+        description: companyDescription
+        contactEmail,
+        contactPhone
+      }
 
     }
   }
