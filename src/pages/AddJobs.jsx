@@ -12,6 +12,7 @@ const AddJobs = () => {
   const [contactPhone, setContactPhone] = useState('');
 
   const handleSubmit = (e)=>{
+    e.preventDefault()
     console.log(title, contactPhone)
   }
 
