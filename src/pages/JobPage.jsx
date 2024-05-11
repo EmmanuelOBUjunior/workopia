@@ -2,13 +2,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 import { useParams, useLoaderData } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import {FaArrowLeft} from 'react-icons/fa'
 
 const JobPage = ({deleteJob}) => {
   const { id } = useParams();
   const job = useLoaderData();
-  const navigate
+  const navigate = useNavigate();
 
 
   const handleDelete = (jobId) =>{
