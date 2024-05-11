@@ -15,6 +15,7 @@ const JobPage = ({deleteJob}) => {
     const confirm = window.confirm("Are you sure you want to delete this job listing?")
 
     if(!confirm) return
+    
     deleteJob(jobId)
     return navigate('/jobs')
   }
