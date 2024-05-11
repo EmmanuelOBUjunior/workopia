@@ -11,6 +11,8 @@ const AddJobs = () => {
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
 
+  const navigate = useNavigate()
+
   const handleSubmit = (e)=>{
     e.preventDefault()
     
