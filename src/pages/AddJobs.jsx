@@ -191,7 +191,7 @@ const AddJobs = () => {
                   className="border rounded w-full py-2 px-3"
                   placeholder="Optional phone for applicants"
                   value={contactPhone}
-                  onChange={(e)=>setType(e.target.value)}
+                  onChange={(e)=>setContactPhone(e.target.value)}
                 />
               </div>
 
