@@ -29,7 +29,11 @@ const App = () => {
 
   //DELETE LISTED JOB
   const deleteJob = async(jobId) =>{
-    const res = await fetch(`/api/job/${jobId}`)
+    const res = await fetch(`/api/job/${jobId}`,{
+      method: 'DELETE'
+    })
+    if(res.ok)
+    return
   }
 
 
