@@ -27,6 +27,8 @@ const App = () => {
     if(res.ok) return
   }
 
+  //DELETE LISTED JOB
+
 
   const router = createBrowserRouter(
     createRoutesFromElements(
