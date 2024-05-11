@@ -14,12 +14,18 @@ import JobPage,{jobLoader} from "./pages/JobPage";
 
 
 const App = () => {
+
+  const submitNewJob = (newJob) =>{
+    console.log(newJob)
+  }
+
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout/>}>
         <Route index element={<Homepage/>}/>
         <Route path="/jobs" element={<JobsPage/>}/>
-        <Route path="/add-job" element={<AddJobs/>}/>
+        <Route path="/add-job" element={<AddJobs submitNewJob={submitNewJob}/>}/>
         <Route path="/job/:id" element={<JobPage/>} loader={jobLoader}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Route>
