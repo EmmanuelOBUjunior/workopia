@@ -8,8 +8,8 @@ const AddJobs = () => {
   const [salary, setSalary] = useState();
   const [companyName, setCompanyName] = useState();
   const [companyDescription, setCompanyDescription] = useState();
-  const [contactEmail, setContact] = useState();
-  const [title, setTitle] = useState();
+  const [contactEmail, setContactEmail] = useState();
+  const [contactPhone, setContactPhone] = useState();
 
   return (
     <>
