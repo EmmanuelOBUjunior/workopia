@@ -15,7 +15,7 @@ import JobPage,{jobLoader} from "./pages/JobPage";
 
 const App = () => {
 
-  const submitNewJob = (newJob) =>{
+  const submitNewJob = async(newJob) =>{
     const res = await fetch('/api/jobs')
   }
 
