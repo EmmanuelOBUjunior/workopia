@@ -22,7 +22,7 @@ const AddJobs = () => {
       salary,
       company:{
         name: companyName,
-        description: companyDescription
+        description: companyDescription,
         contactEmail,
         contactPhone
       }
