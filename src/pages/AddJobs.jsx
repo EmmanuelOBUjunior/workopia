@@ -1,7 +1,9 @@
 
 const AddJobs = () => {
   return (
-    <div>Add Jobs Page</div>
+    <>
+    
+    </>
   )
 }
 
