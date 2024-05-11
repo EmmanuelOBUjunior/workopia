@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const AddJobs = () => {
+  const [title, setTitle] = useState();
+
   return (
     <>
       <section className="bg-indigo-50">
