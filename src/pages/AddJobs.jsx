@@ -32,6 +32,8 @@ const AddJobs = ({submitNewJob}) => {
 
     }
 
+    submitNewJob(newJob)
+
     return navigate('/jobs')
 
   
