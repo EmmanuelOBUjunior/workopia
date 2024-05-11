@@ -9,8 +9,8 @@ const JobPage = ({deleteJob}) => {
   const job = useLoaderData();
 
 
-  const handleDelete =()=>{
-    
+  const handleDelete = () =>{
+    deleteJob(jobId)
   }
 
   return (
