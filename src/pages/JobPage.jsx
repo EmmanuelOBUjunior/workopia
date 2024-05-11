@@ -9,7 +9,7 @@ const JobPage = ({deleteJob}) => {
   const job = useLoaderData();
 
 
-  const handleDelete = () =>{
+  const handleDelete = (jobId) =>{
     deleteJob(jobId)
   }
 
