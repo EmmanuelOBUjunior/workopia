@@ -29,7 +29,7 @@ const App = () => {
 
   //DELETE LISTED JOB
   const deleteJob = async(jobId) =>{
-    console.log('delete', jobId)
+    const res = await fetch(`/api/job/${jobId}`)
   }
 
 
