@@ -34,6 +34,7 @@ const AddJobs = () => {
                   className="border rounded w-full py-2 px-3"
                   required
                   value={type}
+                  onChange={(e)=>setType(e.target.value)}
                 >
                   <option value="Full-Time">Full-Time</option>
                   <option value="Part-Time">Part-Time</option>
