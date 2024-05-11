@@ -136,8 +136,8 @@ const AddJobs = () => {
                   name="company"
                   className="border rounded w-full py-2 px-3"
                   placeholder="Company Name"
-                  value={type}
-                  onChange={(e)=>setType(e.target.value)}
+                  value={companyName}
+                  onChange={(e)=>setCompanyName(e.target.value)}
                 />
               </div>
 
