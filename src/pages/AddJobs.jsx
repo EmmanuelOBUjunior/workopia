@@ -12,7 +12,7 @@ const AddJobs = () => {
   const [contactPhone, setContactPhone] = useState('');
 
   const handleSubmit = (e)=>{
-    
+    console.log(title, contactPhone)
   }
 
   return (
