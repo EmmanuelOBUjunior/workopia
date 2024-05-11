@@ -8,6 +8,7 @@ import {FaArrowLeft} from 'react-icons/fa'
 const JobPage = ({deleteJob}) => {
   const { id } = useParams();
   const job = useLoaderData();
+  const navigate
 
 
   const handleDelete = (jobId) =>{
