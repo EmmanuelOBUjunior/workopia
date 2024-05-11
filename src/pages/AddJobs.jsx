@@ -32,6 +32,8 @@ const AddJobs = () => {
 
     }
 
+    return navigate('/jobs')
+
   
   }
 
