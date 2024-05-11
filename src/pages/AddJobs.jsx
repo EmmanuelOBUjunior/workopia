@@ -15,7 +15,11 @@ const AddJobs = () => {
     e.preventDefault()
     
     const newJob = {
+      title,
+      type,
+      location,
       
+
     }
   }
 
