@@ -13,6 +13,7 @@ const JobPage = ({deleteJob}) => {
 
   const handleDelete = (jobId) =>{
     deleteJob(jobId)
+    return navigate('/jobs')
   }
 
   return (
