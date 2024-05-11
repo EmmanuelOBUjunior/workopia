@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 import { useParams, useLoaderData } from "react-router-dom";
