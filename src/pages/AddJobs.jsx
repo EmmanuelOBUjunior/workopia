@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import {useNavigate} from 'react-router-dom'
+import { toast } from "react-toastify";
 
 const AddJobs = ({submitNewJob}) => {
   const [title, setTitle] = useState('');
@@ -34,6 +35,8 @@ const AddJobs = ({submitNewJob}) => {
     }
 
     submitNewJob(newJob)
+
+
 
     return navigate('/jobs')
 
