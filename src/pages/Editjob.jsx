@@ -20,7 +20,7 @@ const EditJob = () => {
   const navigate = useNavigate()
 
   return (
-    <div>Editjob</div>
+    <div>{job.title}</div>
   )
 }
 
