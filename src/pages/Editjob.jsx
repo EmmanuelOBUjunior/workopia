@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 
-const EditJob = () => {
+const EditJob = ({submitJob}) => {
   const job = useLoaderData()
 
   const [title, setTitle] = useState(job.title);
@@ -19,7 +19,9 @@ const EditJob = () => {
 
   const navigate = useNavigate()
 
-  const handleSubmit = () =>{}
+  const handleSubmit = (e) =>{
+    e.preventDafault()
+  }
 
   return (
     <>
