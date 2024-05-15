@@ -17,13 +17,13 @@ import EditJob from "./pages/EditJob";
 const App = () => {
   
   //ADD NEW JOB
-  const submitNewJob = async(newJob) =>{
-    const res = await fetch('/api/jobs',{
+  const submitNewJob = async(job) =>{
+    const res = await fetch(`/api/jobs/${}`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(newJob)
+      body: JSON.stringify(job)
     })
     if(res.ok) return
   
