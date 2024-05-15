@@ -22,7 +22,7 @@ const EditJob = ({submitJob}) => {
   const handleSubmit = (e) =>{
     e.preventDafault()
 
-    const newJob = {
+    const updateJob = {
       title,
       type,
       location,
