@@ -22,6 +22,21 @@ const EditJob = ({submitJob}) => {
   const handleSubmit = (e) =>{
     e.preventDafault()
 
+    const newJob = {
+      title,
+      type,
+      location,
+      description,
+      salary,
+      company:{
+        name: companyName,
+        description: companyDescription,
+        contactEmail,
+        contactPhone
+      }
+
+    }
+
     toast.success('You have successfully updated a job')
     return navigate('/jobs')
   }
