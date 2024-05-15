@@ -9,7 +9,7 @@ const EditJob = ({submitJob}) => {
   const job = useLoaderData()
 
   const [title, setTitle] = useState(job.title);
-  const [id, setId] = useState(job.id);
+  const [id] = useState(job.id);
   const [type, setType] = useState(job.type);
   const [location, setLocation] = useState(job.location);
   const [description, setDescription] = useState(job.description);
