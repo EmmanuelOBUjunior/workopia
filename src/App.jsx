@@ -10,7 +10,7 @@ import JobsPage from "./pages/JobsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AddJobs from "./pages/AddJobs";
 import JobPage,{jobLoader} from "./pages/JobPage";
-import EditJob from "./pages/Editjob";
+import EditJob from "./pages/EditJob";
 
 
 
