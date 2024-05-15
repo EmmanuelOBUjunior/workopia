@@ -22,7 +22,7 @@ const EditJob = ({submitJob}) => {
   const navigate = useNavigate()
 
   const handleSubmit = (e) =>{
-    e.preventDafault()
+    e.preventDefault()
 
     const updateJob = {
       id,
