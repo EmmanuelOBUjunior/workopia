@@ -1,15 +1,15 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import {useNavigate, useLoaderData} from 'react-router-dom'
+import {useNavigate, useLoaderData, useParams} from 'react-router-dom'
 import { toast } from "react-toastify";
 
 
 
 const EditJob = ({submitJob}) => {
   const job = useLoaderData()
+  const {id} = useParams()
 
   const [title, setTitle] = useState(job.title);
-  const [id] = useState(job.id);
   const [type, setType] = useState(job.type);
   const [location, setLocation] = useState(job.location);
   const [description, setDescription] = useState(job.description);
