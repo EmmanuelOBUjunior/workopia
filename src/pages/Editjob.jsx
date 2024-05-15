@@ -39,7 +39,8 @@ const EditJob = ({submitJob}) => {
       }
 
     }
-
+    
+    console.log(updateJob)
     submitJob(updateJob)
 
     toast.success('You have successfully updated a job')
