@@ -13,9 +13,9 @@ const EditJob = () => {
   const [description, setDescription] = useState(job.description);
   const [salary, setSalary] = useState(job.salary);
   const [companyName, setCompanyName] = useState(job.company.name);
-  const [companyDescription, setCompanyDescription] = useState('');
-  const [contactEmail, setContactEmail] = useState('');
-  const [contactPhone, setContactPhone] = useState('');
+  const [companyDescription, setCompanyDescription] = useState(job.company.description);
+  const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
+  const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
 
   const navigate = useNavigate()
 
