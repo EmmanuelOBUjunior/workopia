@@ -26,6 +26,18 @@ const App = () => {
       body: JSON.stringify(newJob)
     })
     if(res.ok) return
+  
+  }
+  //ADD NEW JOB
+  const submitJob = async(updateJob) =>{
+    const res = await fetch('/api/jobs',{
+      method: 'POST',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updateJob)
+    })
+    if(res.ok) return
   }
 
   //DELETE LISTED JOB
@@ -46,7 +58,7 @@ const App = () => {
         <Route path="/add-job" element={<AddJobs submitNewJob={submitNewJob}/>}/>
         <Route path="/job/:id" element={<JobPage deleteJob={deleteJob}/>} loader={jobLoader}/>
         <Route path="*" element={<NotFoundPage/>}/>
-        <Route path="/edit-job/:id" element={<EditJob/>} loader={jobLoader}/>
+        <Route path="/edit-job/:id" element={<EditJob submitJob={submitJob}/>} loader={jobLoader}/>
       </Route>
     )
   )
