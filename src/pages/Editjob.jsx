@@ -22,7 +22,7 @@ const EditJob = ({submitJob}) => {
   const handleSubmit = (e) =>{
     e.preventDafault()
 
-    tost
+    toast.success('You have successfully updated a job')
     return navigate('/jobs')
   }
 
