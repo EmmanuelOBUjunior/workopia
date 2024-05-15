@@ -9,7 +9,7 @@ const EditJob = () => {
 
   const [title, setTitle] = useState(job.title);
   const [type, setType] = useState(job.type);
-  const [location, setLocation] = useState('');
+  const [location, setLocation] = useState(job.location);
   const [description, setDescription] = useState('');
   const [salary, setSalary] = useState('Under $50K');
   const [companyName, setCompanyName] = useState('');
