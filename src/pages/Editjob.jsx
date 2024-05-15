@@ -1,10 +1,11 @@
 import { useState } from "react";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, useLoaderData} from 'react-router-dom'
 import { toast } from "react-toastify";
 
 
 
 const EditJob = () => {
+  const job = useLoaderData()
 
   const [title, setTitle] = useState('');
   const [type, setType] = useState('Full-Time');
@@ -15,6 +16,8 @@ const EditJob = () => {
   const [companyDescription, setCompanyDescription] = useState('');
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
+
+  const navigate = useNavigate()
 
   return (
     <div>Editjob</div>
