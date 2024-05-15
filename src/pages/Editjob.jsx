@@ -19,6 +19,8 @@ const EditJob = () => {
 
   const navigate = useNavigate()
 
+  const handleSubmit = () =>{}
+
   return (
     <>
       <section className="bg-indigo-50">
