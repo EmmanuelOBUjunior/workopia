@@ -98,7 +98,7 @@ const EditJob = ({submitJob}) => {
                   htmlFor="description"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Description
+                  Description {id}
                 </label>
                 <textarea
                   id="description"
