@@ -31,7 +31,7 @@ const App = () => {
   //ADD NEW JOB
   const submitJob = async(updateJob) =>{
     const res = await fetch('/api/jobs',{
-      method: 'POST',
+      method: 'PATCH',
       headers:{
         'Content-Type': 'application/json'
       },
