@@ -17,25 +17,25 @@ import EditJob from "./pages/EditJob";
 const App = () => {
   
   //ADD NEW JOB
-  const submitNewJob = async(job) =>{
-    const res = await fetch(`/api/jobs/${job.id}`,{
+  const submitNewJob = async(newJob) =>{
+    const res = await fetch(`/api/jobs/`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(job)
+      body: JSON.stringify(newJob)
     })
     if(res.ok) return
   
   }
   //UPDATE JOB
-  const submitJob = async(updateJob) =>{
-    const res = await fetch('/api/jobs',{
+  const submitJob = async(job) =>{
+    const res = await fetch(`/api/jobs/${job.id}`,{
       method: 'PUT',
       headers:{
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(updateJob)
+      body: JSON.stringify(job)
     })
     if(res.ok) return
   }
