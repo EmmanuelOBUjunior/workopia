@@ -21,6 +21,9 @@ const EditJob = ({submitJob}) => {
 
   const handleSubmit = (e) =>{
     e.preventDafault()
+
+    tost
+    return navigate('/jobs')
   }
 
   return (
