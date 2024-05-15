@@ -24,6 +24,7 @@ const EditJob = ({submitJob}) => {
     e.preventDafault()
 
     const updateJob = {
+      id,
       title,
       type,
       location,
