@@ -28,10 +28,10 @@ const App = () => {
     if(res.ok) return
   
   }
-  //ADD NEW JOB
+  //UPDATE JOB
   const submitJob = async(updateJob) =>{
     const res = await fetch('/api/jobs',{
-      method: 'PATCH',
+      method: 'PUT',
       headers:{
         'Content-Type': 'application/json'
       },
