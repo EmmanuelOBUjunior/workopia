@@ -1,8 +1,8 @@
 
-const Editjob = () => {
+const EditJob = () => {
   return (
     <div>Editjob</div>
   )
 }
 
-export default Editjob
+export default EditJob
