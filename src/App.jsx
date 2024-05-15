@@ -18,7 +18,7 @@ const App = () => {
   
   //ADD NEW JOB
   const submitNewJob = async(job) =>{
-    const res = await fetch(`/api/jobs/${}`,{
+    const res = await fetch(`/api/jobs/${job.id}`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'
