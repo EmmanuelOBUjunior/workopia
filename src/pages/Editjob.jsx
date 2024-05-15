@@ -7,8 +7,8 @@ import { toast } from "react-toastify";
 const EditJob = () => {
   const job = useLoaderData()
 
-  const [title, setTitle] = useState('');
-  const [type, setType] = useState('Full-Time');
+  const [title, setTitle] = useState(job.title);
+  const [type, setType] = useState(job.type);
   const [location, setLocation] = useState('');
   const [description, setDescription] = useState('');
   const [salary, setSalary] = useState('Under $50K');
