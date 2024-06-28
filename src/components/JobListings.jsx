@@ -12,10 +12,11 @@ const JobListings = ({ isHome = false }) => {
     const fetchJobs = async () => {
       try {
         const res = await fetch("https://job-api-ri32.onrender.com/api/jobs");
-        console.log(res)
+        // console.log(res)
         const data = await res.json();
-        console.log(data.message)
-        setJobs(data);
+        const fetchedJobs = data.jobs
+        console.log(fetchedJobs)
+        setJobs(data.jobs);
       } catch (error) {
         console.log("Error fetching data!!", error);
       } finally {
