@@ -12,6 +12,7 @@ const JobListings = ({ isHome = false }) => {
       try {
         const res = await fetch("https://job-api-ri32.onrender.com/api/jobs");
         const data = await res.json();
+        console.log(data)
         setJobs(data);
       } catch (error) {
         console.log("Error fetching data!!", error);
