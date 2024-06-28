@@ -6,8 +6,6 @@ import { Link } from "react-router-dom"
 const JobListing = ({job}) => {
     const [showFullDescription, setShowFullDescription] = useState(false)
 
-    console.log(job)
-
     let description = job.description;
 
     if(!showFullDescription){
