@@ -18,7 +18,7 @@ const App = () => {
   
   //ADD NEW JOB
   const submitNewJob = async(newJob) =>{
-    const res = await fetch(`/api/jobs/`,{
+    const res = await fetch(`https://job-api-ri32.onrender.com/api/jobs/`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const App = () => {
   }
   //UPDATE JOB
   const submitJob = async(job) =>{
-    const res = await fetch(`/api/jobs/${job.id}`,{
+    const res = await fetch(`https://job-api-ri32.onrender.com/api/jobs/${job.id}`,{
       method: 'PUT',
       headers:{
         'Content-Type': 'application/json'
