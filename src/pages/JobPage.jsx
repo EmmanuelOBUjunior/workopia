@@ -112,8 +112,9 @@ const JobPage = ({deleteJob}) => {
 };
 
 const jobLoader = async ({ params }) => {
-  const res = await fetch(`/api/jobs/${params.id}`);
+  const res = await fetch(`https://job-api-ri32.onrender.com/api/jobs/${params.id}`);
   const data = await res.json();
+  console.log(data)
   return data;
 };
 
