@@ -42,7 +42,7 @@ const App = () => {
 
   //DELETE LISTED JOB
   const deleteJob = async(jobId) =>{
-    const res = await fetch(`/api/jobs/${jobId}`,{
+    const res = await fetch(`https://job-api-ri32.onrender.com/api/jobs/${jobId}`,{
       method: 'DELETE'
     })
     if(res.ok)
