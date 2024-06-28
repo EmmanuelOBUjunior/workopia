@@ -115,7 +115,7 @@ const jobLoader = async ({ params }) => {
   const res = await fetch(`https://job-api-ri32.onrender.com/api/jobs/${params.id}`);
   const data = await res.json();
   const fetchedJob = data.job
-  console.log(fetchedJobs)
+  console.log(fetchedJob)
   return fetchedJob;
 };
 
