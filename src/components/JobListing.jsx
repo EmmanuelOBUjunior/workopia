@@ -6,6 +6,8 @@ import { Link } from "react-router-dom"
 const JobListing = ({job}) => {
     const [showFullDescription, setShowFullDescription] = useState(false)
 
+    console.log(job)
+
     let description = job.description;
 
     if(!showFullDescription){
@@ -35,7 +37,7 @@ const JobListing = ({job}) => {
                 {job.location}
               </div>
               <Link
-                to={`/job/${job.id}`}
+                to={`/job/${job._id}`}
                 className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
               >
                Read More
