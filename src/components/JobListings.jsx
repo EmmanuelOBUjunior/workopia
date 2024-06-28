@@ -10,13 +10,9 @@ const JobListings = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const headers = {'Content-Type':'application/json',
-        'Access-Control-Allow-Origin':'*',
-        'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
       try {
-        const res = await fetch("https://job-api-ri32.onrender.com/api/jobs",{
-          headers: headers
-        });
+        const res = await fetch("https://job-api-ri32.onrender.com/api/jobs");
+        console.log(res)
         const data = await res.json();
         console.log(data.message)
         setJobs(data);
