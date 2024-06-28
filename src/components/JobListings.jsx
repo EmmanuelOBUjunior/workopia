@@ -16,7 +16,7 @@ const JobListings = ({ isHome = false }) => {
         const data = await res.json();
         const fetchedJobs = data.jobs
         console.log(fetchedJobs)
-        setJobs(data.jobs);
+        setJobs(fetchedJobs);
       } catch (error) {
         console.log("Error fetching data!!", error);
       } finally {
