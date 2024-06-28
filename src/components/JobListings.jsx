@@ -10,7 +10,7 @@ const JobListings = ({ isHome = false }) => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await fetch("/api/jobs");
+        const res = await fetch("https://job-api-ri32.onrender.com/api/jobs");
         const data = await res.json();
         setJobs(data);
       } catch (error) {
