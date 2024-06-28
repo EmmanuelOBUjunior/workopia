@@ -7,12 +7,18 @@ const JobListings = ({ isHome = false }) => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     const fetchJobs = async () => {
+      const headers = {'Content-Type':'application/json',
+        'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'}
       try {
-        const res = await fetch("https://job-api-ri32.onrender.com/api/jobs");
+        const res = await fetch("https://job-api-ri32.onrender.com/api/jobs",{
+          headers: headers
+        });
         const data = await res.json();
-        console.log(data)
+        console.log(data.message)
         setJobs(data);
       } catch (error) {
         console.log("Error fetching data!!", error);
